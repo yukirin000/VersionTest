@@ -1,0 +1,77 @@
+//
+//  JLXCPCH.pch
+//  JLXCSNS_iOS
+//
+//  Created by 李晓航 on 15/5/8.
+//  Copyright (c) 2015年 JLXC. All rights reserved.
+//
+
+#ifndef JLXCSNS_iOS_JLXCPCH_pch
+#define JLXCSNS_iOS_JLXCPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+#define FileNameKey @"name"
+#define FileDataKey @"data"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define debugLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"[method] = >%s", __func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#endif
+
+//字体大小
+#define FONT_SIZE_HUGE                      20
+#define FONT_SIZE_LARGE                     18
+#define FONT_SIZE_MEDIUM                    16
+#define FONT_SIZE_SMALL                     14
+#define FONT_SIZE_TINY                      12
+#define FONT_SIZE_MICRO                     10
+
+#define ALERT_SHOW(title, msg) \
+[[[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show]
+//tab高度
+#define kTabBarHeight       48
+//一页请求多少
+#define U_PAGE_SIZE         10
+//nav高度
+#define kNavBarAndStatusHeight ([UIDevice currentDevice].systemVersion.floatValue >= 7.0 ? 64 : 44)
+
+//国际化String 暂时就一种语言
+#define JLXCString(title) NSLocalizedStringFromTable(title, @"UBabyString", nil)
+
+//helper
+#import "DeviceManager.h"
+
+//接口
+#import "Interface.h"
+
+//网络请求
+//#import "HttpService.h"
+
+//控件基类
+#import "CustomButton.h"
+#import "CustomLabel.h"
+#import "CustomImageView.h"
+#import "UIView+LayoutMethods.h"
+
+#define kCenterOriginX(i) (([DeviceManager getDeviceWidth]-i)/2.0)
+
+#if TARGET_IPHONE_SIMULATOR
+#define PATH_OF_DOCUMENT    @"/Users/lixiaohang/Desktop"
+#elif TARGET_OS_IPHONE
+#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#endif
+
+#endif
