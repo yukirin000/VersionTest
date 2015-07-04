@@ -79,6 +79,7 @@
 		42B880B41AFDC42200B2C2F0 /* ToastFinish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B880B21AFDC42200B2C2F0 /* ToastFinish@2x.png */; };
 		42B880B51AFDC42200B2C2F0 /* ToastWarn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B880B31AFDC42200B2C2F0 /* ToastWarn@2x.png */; };
 		42B880C01AFDD5ED00B2C2F0 /* back_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B880BF1AFDD5ED00B2C2F0 /* back_btn@2x.png */; };
+		42B9564D1B469B5B005C53E5 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9564C1B469B5B005C53E5 /* TTViewController.m */; };
 		42CA20F41AFD105C002A7273 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CA20F31AFD105C002A7273 /* libsqlite3.dylib */; };
 		42CA20F61AFD1065002A7273 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CA20F51AFD1065002A7273 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -228,6 +229,8 @@
 		42B880B21AFDC42200B2C2F0 /* ToastFinish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToastFinish@2x.png"; sourceTree = "<group>"; };
 		42B880B31AFDC42200B2C2F0 /* ToastWarn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToastWarn@2x.png"; sourceTree = "<group>"; };
 		42B880BF1AFDD5ED00B2C2F0 /* back_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_btn@2x.png"; sourceTree = "<group>"; };
+		42B9564B1B469B5B005C53E5 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		42B9564C1B469B5B005C53E5 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
 		42CA20F31AFD105C002A7273 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		42CA20F51AFD1065002A7273 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -409,6 +412,8 @@
 			children = (
 				427AD7531AFE1F4B00103CAC /* ViewController.h */,
 				427AD7541AFE1F4B00103CAC /* ViewController.m */,
+				42B9564B1B469B5B005C53E5 /* TTViewController.h */,
+				42B9564C1B469B5B005C53E5 /* TTViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -841,6 +846,7 @@
 				427AD7FA1AFE1F4B00103CAC /* UIButton+WebCache.m in Sources */,
 				427AD7DD1AFE1F4B00103CAC /* AFURLResponseSerialization.m in Sources */,
 				427AD7CF1AFE1F4B00103CAC /* CustomTextField.m in Sources */,
+				42B9564D1B469B5B005C53E5 /* TTViewController.m in Sources */,
 				427AD7EB1AFE1F4B00103CAC /* FMDatabaseAdditions.m in Sources */,
 				427AD7F31AFE1F4B00103CAC /* SDImageCache.m in Sources */,
 				427AD8051AFE1F4B00103CAC /* HttpService.m in Sources */,

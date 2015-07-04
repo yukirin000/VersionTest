@@ -77,6 +77,7 @@
     
     NSLog(@"ggg");
     debugLog(@"hgahah");
+    
 }
 
 #pragma mark- private methods
